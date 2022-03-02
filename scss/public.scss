@@ -1,0 +1,66 @@
+@import "Ginkgo";
+@import "color";
+@import "font";
+@import "link";
+@import "space";
+@import "other";
+
+html {
+  font-size: 13px;
+}
+
+body {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  color: rgba(90, 90, 90, 1.00);
+
+  font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+
+  background-image: url(../img/bg.png);
+  background-color: $color01;
+}
+
+.allBoxs {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include range-width(0, 450px) {
+    padding: 0 15px;
+  }
+}
+
+.centBoxs {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.titleBoxs {
+  width: 100%;
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+.logo {
+  @include range-width(0, 450px) {
+    width: 100%;
+    max-width: 170px;
+  }
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.card-none {
+  background-color: transparent;
+  border: 0;
+}

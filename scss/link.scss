@@ -1,0 +1,63 @@
+@import "Ginkgo";
+@import "color";
+
+a {
+	text-decoration: none;
+}
+
+.menulink {
+	display: inline-block;
+	width: 100%;
+	font-size: 1.3rem !important;
+	color: white;
+	font-weight: bold;
+	line-height: 70px;
+	text-align: center;
+
+	&:hover {
+		color: white;
+		background-color: $color05;
+	}
+
+	@include range-width(0, 450px) {
+		line-height: 55px;
+		border-bottom: 1px solid white;
+		text-align: left !important;
+
+		&:hover {
+			color: white;
+			background-color: transparent;
+		}
+	}
+}
+
+.soLink {
+	display: block;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: white;
+	text-align: left;
+	line-height: 40px;
+
+	&:hover {
+		color: white;
+		text-decoration: underline !important;
+	}
+
+	@include range-width(0, 450px) {
+		display: inline-block;
+		width: 50%;
+		padding-top: 15px;
+		float: left;
+	}
+}
+
+.s-menu-drop {
+  background-color: transparent !important;
+  border: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+

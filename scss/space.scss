@@ -1,0 +1,123 @@
+.tf_boxs {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2rem;
+
+  &.to {
+    background-color: rgba(247, 150, 70, 1.00);
+  }
+
+  &.tored {
+    background-color: red;
+  }
+
+  &.togreen {
+    background-color: green;
+  }
+}
+
+$changeWidth: 770px; //螢幕寬多少要改變
+
+@media screen and (min-width: 0) and (max-width: #{$changeWidth - 1px}) {
+  .table {
+    display: block;
+    width: 100%;
+    background-color: white;
+
+    .tr {
+      display: block;
+      // margin: 10px;
+      // border: 1px solid rgba(247, 150, 70, 1.00);
+
+      .td {
+        display: block;
+        border-right: 1px solid rgba(247, 150, 70, 1.00);
+        border-bottom: 1px solid rgba(247, 150, 70, 1.00);
+        border-left: 1px solid rgba(247, 150, 70, 1.00);
+        text-align: left;
+        padding: 10px;
+        color: black;
+
+        &.tll {
+          border-left: 1px solid rgba(247, 150, 70, 1.00);
+        }
+
+        &.tdd {
+          border-bottom: 2px solid rgba(247, 150, 70, 1.00);
+        }
+
+        &:before {
+          content: attr(title);
+          display: inline-block;
+          width: 120px;
+          font-size: .8rem;
+          color: rgba(247, 150, 70, 1.00);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $changeWidth) {
+  .table {
+    display: table;
+    width: 100%;
+    background-color: white;
+
+    .tr {
+      display: table-row;
+      @include clearfix();
+      
+      .td {
+        display: table-cell;
+        border-right: 1px solid rgba(247, 150, 70, 1.00);
+        border-bottom: 1px solid rgba(247, 150, 70, 1.00);
+        font-size: 1rem;
+        color: black;
+        padding: 10px 0;
+
+        &.tl {
+          border-left: 1px solid rgba(247, 150, 70, 1.00);
+        }
+      }
+
+      &:first-child { // 第一行的 tr
+        
+        .td {
+          position: relative;
+
+          &:before {
+            content: attr(title);
+            display: inline-block;
+            width: 100%;
+            background-color: rgba(253, 234, 218, 1.00);
+            font-size: 1rem;
+            color: black;
+            padding: 10px 0;
+            margin-top: -10px;
+            margin-bottom: 10px;
+          }
+
+          &.to {
+            &:before {
+              border-bottom: 1px solid rgba(247, 150, 70, 1.00);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.theader {
+  display: inline-block;
+  width: 100%;
+}
+
+
+.p-link {
+	padding-top: 6rem;
+	padding-right: 3rem;
+}
