@@ -2,12 +2,22 @@
 $color01: rgba(62, 130, 184, 1.00); // 灰藍色
 $color02: rgba(200, 230, 232, 1.00); // 淺淺藍色
 $color03: rgba(47, 173, 206, 1.00); // 亮藍色
-$color04: rgba(254, 218, 63, 1.00); // 黃色
+$color04: rgba(215, 186, 54, 1.00); // 黃色
 $color05: rgba(222, 129, 110, 1.00); // 粉橘色
 $color06: rgba(236, 160, 72, 1.00); // 橘色
 $color07: rgba(39, 160, 142, 1.00); // 綠色
 $color08: rgba(29, 126, 194, 1.00); // footer底色
 $color09: rgba(0, 86, 139, 1.00); // menu底色
+
+.color01 { color:$color01 !important; }
+.color02 { color:$color02 !important; }
+.color03 { color:$color03 !important; }
+.color04 { color:$color04 !important; }
+.color05 { color:$color05 !important; }
+.color06 { color:$color06 !important; }
+.color07 { color:$color07 !important; }
+.color08 { color:$color08 !important; }
+.color09 { color:$color09 !important; }
 
 .bg-color01 {
 	background-color: $color01;

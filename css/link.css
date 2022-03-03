@@ -1,12 +1,30 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.color01 { color: #3e82b8 !important; }
+
+.color02 { color: #c8e6e8 !important; }
+
+.color03 { color: #2fadce !important; }
+
+.color04 { color: #d7ba36 !important; }
+
+.color05 { color: #de816e !important; }
+
+.color06 { color: #eca048 !important; }
+
+.color07 { color: #27a08e !important; }
+
+.color08 { color: #1d7ec2 !important; }
+
+.color09 { color: #00568b !important; }
+
 .bg-color01 { background-color: #3e82b8; }
 
 .bg-color02 { background-color: #c8e6e8; }
 
 .bg-color03 { background-color: #2fadce; }
 
-.bg-color04 { background-color: #feda3f; }
+.bg-color04 { background-color: #d7ba36; }
 
 .bg-color05 { background-color: #de816e; }
 
@@ -32,3 +50,15 @@ a { text-decoration: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .soLink { display: inline-block; width: 50%; padding-top: 15px; float: left; } }
 
 .s-menu-drop { background-color: transparent !important; border: 0; font-size: 1.3rem; font-weight: bold; color: white; text-align: left; }
+
+.linkmap { font-size: 1.2rem; color: #de816e; }
+.linkmap:hover { color: #de816e; text-decoration: underline; }
+
+.in-btn { display: inline-block; font-size: 1.3rem; color: white; padding: 10px 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; font-weight: bold; margin: 0 15px; }
+.in-btn:hover { color: rgba(255, 255, 255, 0.8); }
+.in-btn.in-c { background-color: #75767a; }
+.in-btn.in-c-01 { background-color: #d7ba36; }
+.in-btn.in-c-02 { background-color: #27a08e; }
+.in-btn.in-c-03 { background-color: #3e82b8; }
+.in-btn.in-c-04 { background-color: #eca048; }
+.in-btn.in-c-05 { background-color: #de816e; }

@@ -61,3 +61,48 @@ a {
   text-align: left;
 }
 
+.linkmap {
+	font-size: 1.2rem;
+	color: $color05;
+
+	&:hover {
+		color: $color05;
+		text-decoration: underline;
+	}
+}
+
+.in-btn {
+	display: inline-block;
+	font-size: 1.3rem;
+	color: white;
+	padding: 10px 30px;
+	@include border-radius(30px);
+	font-weight: bold;
+	margin: 0 15px;
+
+	&:hover {
+		color: rgba(255, 255, 255, .8);
+	}
+
+	&.in-c { 
+		background-color: rgba(117, 118, 122, 1.00);
+	}
+
+	&.in-c-01 { 
+		background-color: $color04;
+	}
+	&.in-c-02 { 
+		background-color: $color07;
+	}
+	&.in-c-03 { 
+		background-color: $color01;
+	}
+	&.in-c-04 { 
+		background-color: $color06;
+	}
+	&.in-c-05 {
+		background-color: $color05;
+	}
+}
+
+

@@ -1,24 +1,39 @@
+@import "Ginkgo";
+@import "color";
+
+
 .tf_boxs {
   display: inline-block;
   width: 100%;
   padding: 10px 20px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+
+  &.to1 {
+    background-color: $color04;
+  }
+
+  &.to2 {
+    background-color: $color07;
+  }
+
+  &.to3 {
+    background-color: $color01;
+  }
 
   &.to {
-    background-color: rgba(247, 150, 70, 1.00);
+    background-color: $color06;
   }
 
-  &.tored {
-    background-color: red;
+  &.to5 {
+    background-color: $color05;
   }
 
-  &.togreen {
-    background-color: green;
-  }
 }
 
-$changeWidth: 770px; //螢幕寬多少要改變
+$changeWidth: 990px; //螢幕寬多少要改變
 
 @media screen and (min-width: 0) and (max-width: #{$changeWidth - 1px}) {
   .table {
@@ -29,37 +44,64 @@ $changeWidth: 770px; //螢幕寬多少要改變
     .tr {
       display: block;
       // margin: 10px;
-      // border: 1px solid rgba(247, 150, 70, 1.00);
+      // border: 1px solid $color06;
 
       .td {
         display: block;
-        border-right: 1px solid rgba(247, 150, 70, 1.00);
-        border-bottom: 1px solid rgba(247, 150, 70, 1.00);
-        border-left: 1px solid rgba(247, 150, 70, 1.00);
         text-align: left;
-        padding: 10px;
+        padding: 10px 0;
         color: black;
 
+        border-right: 1px solid $color06;
+        border-bottom: 1px solid $color06;
+        border-left: 1px solid $color06;
+
+        &.td1 {
+          border-right: 1px solid $color04;
+          border-bottom: 1px solid $color04;
+          border-left: 1px solid $color04;
+        }
+
+        &.td2 {
+          border-right: 1px solid $color07;
+          border-bottom: 1px solid $color07;
+          border-left: 1px solid $color07;
+        }
+
+        &.td3 {
+          border-right: 1px solid $color01;
+          border-bottom: 1px solid $color01;
+          border-left: 1px solid $color01;
+        }
+
+        &.td5 {
+          border-right: 1px solid $color05;
+          border-bottom: 1px solid $color05;
+          border-left: 1px solid $color05;
+        }
+
         &.tll {
-          border-left: 1px solid rgba(247, 150, 70, 1.00);
+          border-left: 1px solid $color06;
         }
 
         &.tdd {
-          border-bottom: 2px solid rgba(247, 150, 70, 1.00);
+          border-bottom: 2px solid $color06;
         }
 
         &:before {
           content: attr(title);
           display: inline-block;
           width: 120px;
-          font-size: .8rem;
-          color: rgba(247, 150, 70, 1.00);
+          font-size: 1.2rem;
+          color: $color06;
           font-weight: 600;
+          margin: 0 10px;
         }
       }
     }
   }
 }
+
 @media screen and (min-width: $changeWidth) {
   .table {
     display: table;
@@ -72,19 +114,49 @@ $changeWidth: 770px; //螢幕寬多少要改變
       
       .td {
         display: table-cell;
-        border-right: 1px solid rgba(247, 150, 70, 1.00);
-        border-bottom: 1px solid rgba(247, 150, 70, 1.00);
         font-size: 1rem;
         color: black;
         padding: 10px 0;
 
+        border-right: 1px solid $color06;
+        border-bottom: 1px solid $color06;
+
+        &.td1 {
+          border-right: 1px solid $color04;
+          border-bottom: 1px solid $color04;
+        }
+
+        &.td2 {
+          border-right: 1px solid $color07;
+          border-bottom: 1px solid $color07;
+        }
+
+        &.td3 {
+          border-right: 1px solid $color01;
+          border-bottom: 1px solid $color01;
+        }
+
+        &.td5 {
+          border-right: 1px solid $color05;
+          border-bottom: 1px solid $color05;
+        }
+
         &.tl {
-          border-left: 1px solid rgba(247, 150, 70, 1.00);
+          width: 30%;
+          border-left: 1px solid $color06;
+
+          &.tl1 {border-left: 1px solid $color04;}
+          &.tl2 {border-left: 1px solid $color07;}
+          &.tl3 {border-left: 1px solid $color01;}
+          &.tl5 {border-left: 1px solid $color05;}
+
+          @include range-width(0, 450px) {
+            width: 100%;
+          }
         }
       }
 
       &:first-child { // 第一行的 tr
-        
         .td {
           position: relative;
 
@@ -93,21 +165,66 @@ $changeWidth: 770px; //螢幕寬多少要改變
             display: inline-block;
             width: 100%;
             background-color: rgba(253, 234, 218, 1.00);
-            font-size: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
             color: black;
             padding: 10px 0;
             margin-top: -10px;
             margin-bottom: 10px;
+            padding: 10px;
           }
 
+          &.to1 {
+            &:before {
+              border-bottom: 1px solid $color04;
+            }
+          }
+
+          &.to2 {
+            &:before {
+              border-bottom: 1px solid $color07;
+            }
+          }
+          &.to3 {
+            &:before {
+              border-bottom: 1px solid $color01;
+            }
+          }
           &.to {
             &:before {
-              border-bottom: 1px solid rgba(247, 150, 70, 1.00);
+              border-bottom: 1px solid $color06;
+            }
+          }
+          &.to5 {
+            &:before {
+              border-bottom: 1px solid $color05;
             }
           }
         }
       }
     }
+  }
+}
+
+.t-text {
+  font-size: 1.2rem;
+  padding: 0 10px !important;
+}
+
+.t-text-b {
+  color: $color01;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0 10px !important;
+}
+
+.linkMore {
+  color: $color03;
+  font-size: 1.2rem;
+  padding: 0 10px !important;
+
+  @include range-width(0, 450px) {
+    float: right;
   }
 }
 
@@ -117,7 +234,34 @@ $changeWidth: 770px; //螢幕寬多少要改變
 }
 
 
+.w25 {
+  width: 25% !important;
+
+  @include range-width(0, 450px) {
+    width: 100% !important;
+  }
+}
+
+.w15 {
+  width: 15% !important;
+  
+  @include range-width(0, 450px) {
+    width: 100% !important;
+  }
+}
+
+// 以上是表單
+
+
+
+
 .p-link {
 	padding-top: 6rem;
 	padding-right: 3rem;
 }
+
+.border-d02-b {
+  border-bottom: 2px dotted rgba(79, 77, 81, .5);
+}
+
+

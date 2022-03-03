@@ -1,12 +1,30 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.color01 { color: #3e82b8 !important; }
+
+.color02 { color: #c8e6e8 !important; }
+
+.color03 { color: #2fadce !important; }
+
+.color04 { color: #d7ba36 !important; }
+
+.color05 { color: #de816e !important; }
+
+.color06 { color: #eca048 !important; }
+
+.color07 { color: #27a08e !important; }
+
+.color08 { color: #1d7ec2 !important; }
+
+.color09 { color: #00568b !important; }
+
 .bg-color01 { background-color: #3e82b8; }
 
 .bg-color02 { background-color: #c8e6e8; }
 
 .bg-color03 { background-color: #2fadce; }
 
-.bg-color04 { background-color: #feda3f; }
+.bg-color04 { background-color: #d7ba36; }
 
 .bg-color05 { background-color: #de816e; }
 
@@ -21,6 +39,8 @@
 .bg-color-w { background-color: rgba(255, 255, 255, 0.7); }
 
 p { margin-bottom: 0 !important; }
+
+i { font-style: normal !important; }
 
 .title { display: inline-block; width: 100%; text-align: center; font-size: 3rem; color: #3e82b8; font-weight: bold; margin-bottom: 0; position: absolute; bottom: 25%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .title { font-size: 2.4rem; bottom: 19%; } }

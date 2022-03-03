@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>2022桃園兒童藝術節</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+  </head>
+
+  <body>
+    <!-- 社群按鈕 -->
+    <div class="position-relative d-none d-xl-block">
+      <div class="position-absolute top-0 end-0 p-link">
+        <a href="index.html" class="soLink"><img src="img/icon_home.svg" class="pe-3">回首頁</a>
+        <a class="soLink" href="" href="https://www.facebook.com/typerformanceart/?ref=py_c" target='_black'><img src="img/icon_fb.svg" class="pe-3">桃演本舖</a>
+      </div>
+    </div>
+
+    <!-- 網站選單 -->
+    <div class="container-fluid px-0 bg-color09">
+      <div class="allBoxs d-none d-xl-block">
+        <div class="row align-items-center">
+          <div class="col"><a href="index.html"><img src="img/logo.png"></a></div>
+          <div class="col"><a href="news.html" class="menulink">最新消息</a></div>
+          <div class="col"><a href="about.html" class="menulink">關於兒藝節</a></div>
+          <div class="col"><a href="time.html" class="menulink">活動時間總表</a></div>
+          <div class="col"><a href="map.html" class="menulink">活動地圖</a></div>
+          <div class="col">
+            <div class="dropdown">
+              <a class="menulink dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                活動內容
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="ac0100.html">看表演</a></li>
+                <li><a class="dropdown-item" href="ac0200.html">賞展覽</a></li>
+                <li><a class="dropdown-item" href="ac0300.html">玩童玩</a></li>
+                <li><a class="dropdown-item" href="ac0400.html">逛市集</a></li>
+                <li><a class="dropdown-item" href="ac0500.html">遊館舍</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col"><a href="acinfo.html" class="menulink">活動報名專區</a></div>
+          <div class="col"><a href="note.html" class="menulink">防疫專區</a></div>
+        </div>
+      </div>
+
+      <div class="allBoxs d-xl-none d-block">
+        <div class="row align-items-center">
+          <div class="col-auto"><a href="index.html"><img src="img/logo.png" class="logo py-3"></a></div>
+          <div class="col">
+            <button class="btn float-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 手機選單 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header bg-color09">
+        <a href="index.html"><img src="img/logo.png" class="logo"></a>
+        <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="offcanvas-body">
+          <div class="col-auto"><a href="news.html" class="menulink">最新消息</a></div>
+          <div class="col-auto"><a href="about.html" class="menulink">關於兒藝節</a></div>
+          <div class="col-auto"><a href="time.html" class="menulink">活動時間總表</a></div>
+          <div class="col-auto"><a href="map.html" class="menulink">活動地圖</a></div>
+          <div class="col-auto">
+            <button class="btn menulink p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              活動內容<i class="bi bi-caret-down-fill ps-3"></i>
+            </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body s-menu-drop">
+                <a class="dropdown-item" href="ac0100.html">看表演</a>
+                <a class="dropdown-item" href="ac0200.html">賞展覽</a>
+                <a class="dropdown-item" href="ac0300.html">玩童玩</a>
+                <a class="dropdown-item" href="ac0400.html">逛市集</a>
+                <a class="dropdown-item" href="ac0500.html">遊館舍</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto"><a href="acinfo.html" class="menulink">活動報名專區</a></div>
+          <div class="col-auto"><a href="note.html" class="menulink">防疫專區</a></div>
+          <div class="col-auto"><a class="soLink" href="index.html"><img src="img/icon_home.svg" class="pe-3">回首頁</a></div>
+          <div class="col-auto"><a class="soLink"  href="https://www.facebook.com/typerformanceart/?ref=py_c" target='_black'><img src="img/icon_fb.svg" class="pe-3">桃演本舖</a></div>
+      </div>
+    </div>
+
+    <!-- 標題 -->
+    <div class="container-fluid px-0">
+      <div class="titleBoxs py-xl-5 py-2">
+        <div class="card card-none text-black fs-1">
+          <img src="img/title-bg.png" class="card-img" alt="">
+          <div class="card-img-overlay">
+            <h5 class="title color05">遊館舍</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 內容 -->
+    <div class="container-fluid px-xl-0 pb-5 pt-xl-0 pt-4">
+      <div class="centBoxs bg-color-w p-xl-5 rounded-3">
+        <div class="centBoxs bg-color-w p-4 rounded-3">
+          <div class='tf_boxs to5'>桃園</div>
+          <div class='table'>
+            <!-- 01 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">童演童語嬰幼兒閱讀推廣活動</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">3/12(六)、3/19(六)、4/9(六)</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">總館</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">自由入場</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0501.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+            <!-- 02 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">土地公兒童月</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">4月2日(六)至4月30日(六)</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">土地公文化館</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">報名參與</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0502.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+            <!-- 03 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">魔法電影遊樂園</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">3月 ~ 4月</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">桃園光影文化館放映廳</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">報名參與</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0503.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+            <!-- 04 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">藝童玩節奏-敲敲音樂總動員</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">3月26日(六)、4月9日(六) 9:30 ~ 11:30</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">桃園展演中心</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">免費參加</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0504.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+          </div>
+
+          <div class='tf_boxs to5'>大溪</div>
+          <div class='table'>
+            <!-- 01 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">大溪小職人--玩出生活超能力</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">3月28日(一)至4月24日(日)</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">大溪木藝生態博物館園區</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">事先報名</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0505.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+          </div>
+
+          <div class='tf_boxs to5'>蘆竹</div>
+          <div class='table'>
+            <!-- 01 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">兒藝村三週年館慶活動</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">4月3日(日)10:00-17:00</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">南崁兒童藝術村</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">自由入場</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0506.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+          </div>
+
+          <div class='tf_boxs to5'>龜山</div>
+          <div class='table'>
+            <!-- 01 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">非洲非常樂</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">【小小非洲大世界】4月2日(六) 15:00-16:00</br>【非常手作-親子工作坊】4月10日(日)14:30-15:30</br>【非洲故事-親子工作坊】4月16日(六) 14:30-15:30</br>【非洲樂舞-親子工作坊】4月24日(日) 14:30-15:30</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">A8藝文中心</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">報名參與</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0507.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+          </div>
+
+          <div class='tf_boxs to5'>中壢</div>
+          <div class='table'>
+            <!-- 01 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">幼手作環保-環境教育系列工作坊</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">4月2日(六)-4月5日(二)</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">中平路故事館</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">事先報名</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0508.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+            <!-- 02 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">我的城市筆記本</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">4月2日(六)-4月5日(二)</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">中平路故事館</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">事先報名</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0509.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+            <!-- 03 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">龜眷有藝典-眷村同樂系列工作坊</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">4月2日(六)-4月5日(二)</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">龜山眷村故事館</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">事先報名</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0510.html"><i class="bi bi-link-45deg  pe-2"></i>更多介紹</a></div>
+            </div>
+            <!-- 04 -->
+            <div class='tr'>
+              <div class='td td5 to5 tl tl5 tll' title='活動名稱'><p class="t-text-b">轉角換到愛-壢景町玩具繪本二手夢工廠</p></div>
+              <div class='td td5 to5 tll w25' title='活動時間'><p class="t-text">4月3日10:00-17:00</p></div>
+              <div class='td td5 to5 tll w15' title='活動地點'><p class="t-text">壢景町戶外廣場</p></div>
+              <div class='td td5 to5 tll w15' title='參與方式'><p class="t-text">自由入場/事先報名</p></div>
+              <div class='td td5 to5 tll w15' title='詳細'><a class='linkMore' href="ac0511.html"><i class="bi bi-link-45deg pe-2"></i>更多介紹</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-color08">
+      <div class="allBoxs">
+        <p class="text-white fs-4 pb-3">指導單位｜桃園市政府 · 桃園市議會</p>
+        <p class="text-white fs-4 pb-3">主辦單位｜桃園市政府文化局 · 桃園市立圖書館 · 桃園市立美術館 · 大滿木藝生態博物館 · 桃園市政府藝能設施管理中心 · 桃園市文化基金會</p>
+        <p class="text-white fs-4">協辦單位｜桃園市政府交通局 · 平鎮區公所 · 桃園市學藝員策進會 · ThERE音樂教室 · 桃園77藝文町 · 南崁兒童藝術村 · 壢景町</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous">
+    </script>
+  </body>
+</html>

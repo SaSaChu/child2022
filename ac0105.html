@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>2022桃園兒童藝術節</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+  </head>
+
+  <body>
+    <!-- 社群按鈕 -->
+    <div class="position-relative d-none d-xl-block">
+      <div class="position-absolute top-0 end-0 p-link">
+        <a href="index.html" class="soLink"><img src="img/icon_home.svg" class="pe-3">回首頁</a>
+        <a class="soLink" href="" href="https://www.facebook.com/typerformanceart/?ref=py_c" target='_black'><img src="img/icon_fb.svg" class="pe-3">桃演本舖</a>
+      </div>
+    </div>
+
+    <!-- 網站選單 -->
+    <div class="container-fluid px-0 bg-color09">
+      <div class="allBoxs d-none d-xl-block">
+        <div class="row align-items-center">
+          <div class="col"><a href="index.html"><img src="img/logo.png"></a></div>
+          <div class="col"><a href="news.html" class="menulink">最新消息</a></div>
+          <div class="col"><a href="about.html" class="menulink">關於兒藝節</a></div>
+          <div class="col"><a href="time.html" class="menulink">活動時間總表</a></div>
+          <div class="col"><a href="map.html" class="menulink">活動地圖</a></div>
+          <div class="col">
+            <div class="dropdown">
+              <a class="menulink dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                活動內容
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="ac0100.html">看表演</a></li>
+                <li><a class="dropdown-item" href="ac0200.html">賞展覽</a></li>
+                <li><a class="dropdown-item" href="ac0300.html">玩童玩</a></li>
+                <li><a class="dropdown-item" href="ac0400.html">逛市集</a></li>
+                <li><a class="dropdown-item" href="ac0500.html">遊館舍</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col"><a href="acinfo.html" class="menulink">活動報名專區</a></div>
+          <div class="col"><a href="note.html" class="menulink">防疫專區</a></div>
+        </div>
+      </div>
+
+      <div class="allBoxs d-xl-none d-block">
+        <div class="row align-items-center">
+          <div class="col-auto"><a href="index.html"><img src="img/logo.png" class="logo py-3"></a></div>
+          <div class="col">
+            <button class="btn float-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 手機選單 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header bg-color09">
+        <a href="index.html"><img src="img/logo.png" class="logo"></a>
+        <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="offcanvas-body">
+          <div class="col-auto"><a href="news.html" class="menulink">最新消息</a></div>
+          <div class="col-auto"><a href="about.html" class="menulink">關於兒藝節</a></div>
+          <div class="col-auto"><a href="time.html" class="menulink">活動時間總表</a></div>
+          <div class="col-auto"><a href="map.html" class="menulink">活動地圖</a></div>
+          <div class="col-auto">
+            <button class="btn menulink p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              活動內容<i class="bi bi-caret-down-fill ps-3"></i>
+            </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body s-menu-drop">
+                <a class="dropdown-item" href="ac0100.html">看表演</a>
+                <a class="dropdown-item" href="ac0200.html">賞展覽</a>
+                <a class="dropdown-item" href="ac0300.html">玩童玩</a>
+                <a class="dropdown-item" href="ac0400.html">逛市集</a>
+                <a class="dropdown-item" href="ac0500.html">遊館舍</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto"><a href="acinfo.html" class="menulink">活動報名專區</a></div>
+          <div class="col-auto"><a href="note.html" class="menulink">防疫專區</a></div>
+          <div class="col-auto"><a class="soLink" href="index.html"><img src="img/icon_home.svg" class="pe-3">回首頁</a></div>
+          <div class="col-auto"><a class="soLink"  href="https://www.facebook.com/typerformanceart/?ref=py_c" target='_black'><img src="img/icon_fb.svg" class="pe-3">桃演本舖</a></div>
+      </div>
+    </div>
+
+    <!-- 標題 -->
+    <div class="container-fluid px-0">
+      <div class="titleBoxs py-xl-5 py-2">
+        <div class="card card-none text-black fs-1">
+          <img src="img/title-bg.png" class="card-img" alt="">
+          <div class="card-img-overlay">
+            <h5 class="title color04">看表演</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 內容 -->
+    <div class="container-fluid px-xl-0 pb-5 pt-xl-0 pt-4">
+      <div class="centBoxs bg-color-w p-xl-5 rounded-3">
+        <div class="centBoxs bg-color-w p-4 rounded-3">
+          <div class="row">
+            <div class="col-12" >
+              <div class="h1 color04 fw-bold pb-4">妮妮的小秘密</div>
+            </div>
+
+            <div class="col-xl-6 col-12">
+              <div class="pb-5">
+                <p class="h3 fw-bold text-dark mb-2">● 演出劇碼介紹：</p>
+                <p class="h3">特別邀請110年桃園傑出演藝團隊「慢島劇團」帶來這齣去年新創的劇目。演員以偶戲引導年輕孩子去面對困難的身體議題，面對身體的界線，如何讓孩子守護、表達自己的意見，是近年越來越重要的問題，期望由這次的演出，讓孩子學習勇於表達，「不要」就是不要！</p>
+              </div>
+
+              <!-- <div class="pb-5">
+                <p class="h3 fw-bold text-dark mb-2">● 劇團介紹：</p>
+                <p class="h3">紙風車劇團創立於1992年，以製作原創作品推動國內兒童戲劇多元化及精緻化為目標，演出形式不侷限於傳統的說故事劇場，嘗試將劇場觀念與技巧融入表演中，塑造出極富創造性的想像空間和觀眾交流。</p>
+              </div> -->
+            </div>
+
+            <div class="col-xl-6 col-12">
+              <img src="img/ac0105.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-color08">
+      <div class="allBoxs">
+        <p class="text-white fs-4 pb-3">指導單位｜桃園市政府 · 桃園市議會</p>
+        <p class="text-white fs-4 pb-3">主辦單位｜桃園市政府文化局 · 桃園市立圖書館 · 桃園市立美術館 · 大滿木藝生態博物館 · 桃園市政府藝能設施管理中心 · 桃園市文化基金會</p>
+        <p class="text-white fs-4">協辦單位｜桃園市政府交通局 · 平鎮區公所 · 桃園市學藝員策進會 · ThERE音樂教室 · 桃園77藝文町 · 南崁兒童藝術村 · 壢景町</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous">
+    </script>
+  </body>
+</html>
