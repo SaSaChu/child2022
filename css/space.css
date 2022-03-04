@@ -85,6 +85,9 @@
 
 .theader { display: inline-block; width: 100%; }
 
+.w30 { width: 30% !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .w30 { width: 100% !important; } }
+
 .w25 { width: 25% !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .w25 { width: 100% !important; } }
 

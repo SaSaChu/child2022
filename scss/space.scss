@@ -233,6 +233,13 @@ $changeWidth: 990px; //螢幕寬多少要改變
   width: 100%;
 }
 
+.w30 {
+  width: 30% !important;
+
+  @include range-width(0, 450px) {
+    width: 100% !important;
+  }
+}
 
 .w25 {
   width: 25% !important;

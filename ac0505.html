@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>2022桃園兒童藝術節</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+  </head>
+
+  <body>
+    <!-- 社群按鈕 -->
+    <div class="position-relative d-none d-xl-block">
+      <div class="position-absolute top-0 end-0 p-link">
+        <a href="index.html" class="soLink"><img src="img/icon_home.svg" class="pe-3">回首頁</a>
+        <a class="soLink" href="" href="https://www.facebook.com/typerformanceart/?ref=py_c" target='_black'><img src="img/icon_fb.svg" class="pe-3">桃演本舖</a>
+      </div>
+    </div>
+
+    <!-- 網站選單 -->
+    <div class="container-fluid px-0 bg-color09">
+      <div class="allBoxs d-none d-xl-block">
+        <div class="row align-items-center">
+          <div class="col"><a href="index.html"><img src="img/logo.png"></a></div>
+          <div class="col"><a href="news.html" class="menulink">最新消息</a></div>
+          <div class="col"><a href="about.html" class="menulink">關於兒藝節</a></div>
+          <div class="col"><a href="time.html" class="menulink">活動時間總表</a></div>
+          <div class="col"><a href="map.html" class="menulink">活動地圖</a></div>
+          <div class="col">
+            <div class="dropdown">
+              <a class="menulink dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                活動內容
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="ac0100.html">看表演</a></li>
+                <li><a class="dropdown-item" href="ac0200.html">賞展覽</a></li>
+                <li><a class="dropdown-item" href="ac0300.html">玩童玩</a></li>
+                <li><a class="dropdown-item" href="ac0400.html">逛市集</a></li>
+                <li><a class="dropdown-item" href="ac0500.html">遊館舍</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col"><a href="acinfo.html" class="menulink">活動報名專區</a></div>
+          <div class="col"><a href="note.html" class="menulink">防疫專區</a></div>
+        </div>
+      </div>
+
+      <div class="allBoxs d-xl-none d-block">
+        <div class="row align-items-center">
+          <div class="col-auto"><a href="index.html"><img src="img/logo.png" class="logo py-3"></a></div>
+          <div class="col">
+            <button class="btn float-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 手機選單 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header bg-color09">
+        <a href="index.html"><img src="img/logo.png" class="logo"></a>
+        <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="offcanvas-body">
+          <div class="col-auto"><a href="news.html" class="menulink">最新消息</a></div>
+          <div class="col-auto"><a href="about.html" class="menulink">關於兒藝節</a></div>
+          <div class="col-auto"><a href="time.html" class="menulink">活動時間總表</a></div>
+          <div class="col-auto"><a href="map.html" class="menulink">活動地圖</a></div>
+          <div class="col-auto">
+            <button class="btn menulink p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              活動內容<i class="bi bi-caret-down-fill ps-3"></i>
+            </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body s-menu-drop">
+                <a class="dropdown-item" href="ac0100.html">看表演</a>
+                <a class="dropdown-item" href="ac0200.html">賞展覽</a>
+                <a class="dropdown-item" href="ac0300.html">玩童玩</a>
+                <a class="dropdown-item" href="ac0400.html">逛市集</a>
+                <a class="dropdown-item" href="ac0500.html">遊館舍</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto"><a href="acinfo.html" class="menulink">活動報名專區</a></div>
+          <div class="col-auto"><a href="note.html" class="menulink">防疫專區</a></div>
+          <div class="col-auto"><a class="soLink" href="index.html"><img src="img/icon_home.svg" class="pe-3">回首頁</a></div>
+          <div class="col-auto"><a class="soLink"  href="https://www.facebook.com/typerformanceart/?ref=py_c" target='_black'><img src="img/icon_fb.svg" class="pe-3">桃演本舖</a></div>
+      </div>
+    </div>
+
+    <!-- 標題 -->
+    <div class="container-fluid px-0">
+      <div class="titleBoxs py-xl-5 py-2">
+        <div class="card card-none text-black fs-1">
+          <img src="img/title-bg.png" class="card-img" alt="">
+          <div class="card-img-overlay">
+            <h5 class="title color05">遊館舍</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 內容 -->
+    <div class="container-fluid px-xl-0 pb-5 pt-xl-0 pt-4">
+      <div class="centBoxs bg-color-w p-xl-5 rounded-3">
+        <div class="centBoxs bg-color-w p-4 rounded-3">
+          <div class="row">
+            <div class="col-12">
+              <div class="h1 color05 fw-bold pb-4">大溪小職人--玩出生活超能力</div>
+            </div>
+
+            <div class="col-xl-6 col-12">
+              <div class="pb-5">
+                <p class="h3 fw-bold text-dark mb-2">● 活動特色：</p>
+                <p class="h3">
+                  「從新手到高手，成為大溪百工MASTER!」</br></br>
+                  看似平凡的大溪街道巷弄裡，隱藏著各行各業的師傅，他們除了掌握頂級的工具、高超的技藝，更重要的是擁有面對挑戰的勇氣，才能用手、用心來創造美好的生活!</br>
+                  這個春天，就讓木博館變成大溪百工新手村，剛抵達新手村的小勇者們! </br>趕快加入百工師傅們的旗下，學習技能、發揮創意，一起成為百工高手，勇敢地迎向世界吧!</br>
+                  百工新手村系列活動包含各式手作課程、市集、體驗活動與踩街，各活動場次時間、地點與內容，詳情請見木博館臉書專頁。
+                </p>
+              </div>
+            </div>
+
+            <div class="col-xl-6 col-12">
+              <img src="img/KV.png" class="img-fluid">
+            </div>
+
+            <div class="col-12">
+              <div class='tf_boxs to5'>系列活動</div>
+              <div class='table'>
+                <!-- 01 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【百工博覽會】木生活館(自由入場)</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      04／02（六）13：00-16：00</br>
+                      04／04（一）13：00-16：00
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      以大溪的木藝、豆干、社頭、各式百工文化發想為體驗活動，展示各式道具、器物提供兒童、親子互動體驗。
+                    </p>
+                  </div>
+                </div>
+                <!-- 02 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【百工傳藝工作坊】木生活館</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      04／02（六）14：00-15：00</br>
+                      04／04（一）14：00-15：00
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      搭配體驗活動，讓小朋友得以親手製作陀螺、木飛機、豆干、卡榫等，並可搭配傳藝體驗活動進行。
+                    </p>
+                  </div>
+                </div>
+                <!-- 03 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【百工商店街】木生活館(自由入場)</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      04／09（六）14：00-19：00
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      以兒童藝術體驗、童玩教具等兒童或親子互動的攤位，預計20攤
+                    </p>
+                  </div>
+                </div>
+                <!-- 04 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【木藝師】</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      04／09（六）13：00-16：00</br>
+                      04／10（日）13：00-16：00
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      活用各式工具，從木材開始親手打造家中的木製家具、生活用品。
+                    </p>
+                  </div>
+                </div>
+                <!-- 05 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【香氛蠟燭師】</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      04／03（日）10：00-12：00</br>
+                      04／04（一）13：30-15：30</br>
+                      04／17（日）13：30-15：30</br>
+                      04／24（日）13：30-15：30
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      調製檜木香氛蠟燭，並親手磨製木製燭台。
+                    </p>
+                  </div>
+                </div>
+                <!-- 06 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【風土染織師】</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      04／17（六）14：00－16：00
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      邀請「幸運草植物染織工坊」的柯敦耀講師進行藍染／植染體驗課程，介紹從天然材料與地方自然環境，學會製作版型和完成型染，學會植物染色與藍染的技藝。(品項：便當布巾、手帕)
+                    </p>
+                  </div>
+                </div>
+                <!-- 07 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【物產野餐大師】</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                     04／18（日）10：00－12：00 (2H)
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      由食農教育的理念構思，讓孩子一起邊遊戲、邊實作、邊學習，使孩子對「食」感興趣：吃什麼、為什麼吃、怎麼吃，引導孩子親自製作飯糰、三明治、水果料理與飲品等，搭配家庭野餐活動。
+                    </p>
+                  </div>
+                </div>
+                <!-- 08 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【美學篆刻師】</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      04／23（六）13：00－16：00
+                      04／24（日）13：00－16：00</br>
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      由篆刻師引導父母和小朋友一同討論、設計印章圖案，並雕刻出一組專屬於全家人的印章。
+                    </p>
+                  </div>
+                </div>
+                <!-- 09 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【老屋裡的裝潢師】</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      04／02（六）14：00-16：00</br>
+                      04／03（日）14：30-16：30
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      1.李宅導覽：認識李騰芳古宅中的各種泥塑的祥獸紋飾</br>
+                      2.手作課程：陶藝師的教學使用輕黏土，從李宅祥獸紋飾發想，創作壁面掛飾。
+                    </p>
+                  </div>
+                </div>
+                <!-- 10 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【老街上的馴獸師】</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      4／16（六）13：00-16：00</br>
+                      4／17（三）13：00-16：00</br>
+                      4／23（六）09：00-12：00</br>
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      由劇團老師帶領孩子們認識大溪牌樓的神獸紋飾，並發揮創意以多種材料製作神獸面具。
+                    </p>
+                  </div>
+                </div>
+                <!-- 11 -->
+                <div class='tr'>
+                  <div class='td td5 to5 tl tl5 tll' title='活動名稱'>
+                    <p class="t-text-b">【老街劇團】(除了工作坊參加者事先報名參加之外，自由入場)</p>
+                  </div>
+                  <div class='td td5 to5 tll w30' title='活動時間'>
+                    <p class="t-text">
+                      4／23（六）13：30-16：00
+                    </p>
+                  </div>
+                  <div class='td td5 to5 tll' title='活動簡述'>
+                    <p class="t-text">
+                      如哈美崙的吹笛手般的劇團老師擔任引導者，帶領穿上小神獸裝扮的孩子們，到老城區踩街遊行，孩子們沿路向民眾發送尋找神獸的地圖。
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 pt-5">
+              <p class="h3 fw-bold text-dark mb-2">● 大眾交通運輸：</p>
+              <p class="h3">
+                <b class="color05">老城區</b></br>
+                <b>【搭乘大眾運輸】</b></br>
+                <b>桃園高鐵站：</b>搭乘台灣好行【501】大溪快線，於「大溪老街站」下車。</br>
+                <b>桃園火車站：</b>至後站桃園客運總站搭乘【5096】路線，於「大溪總站」下車。</br>
+                至桃園客運總站搭乘臺灣好行【502】小烏來線（假日行駛），於「大溪老街站」下車。</br>
+                <b>中壢火車站：</b>至後站出口右側站牌搭乘【5098】路線，於「大溪總站」下車。</br>
+                <b>捷運永寧站：</b>至4號出口搭乘【710】路線，於「新街尾站」或「大溪總站」下車。
+                </br></br> 
+                <b>【自行開車】</b></br>
+                <b>行駛國道三號：</b>大溪交流道下，循員林路一段、介壽路至大溪，過武嶺橋沿康莊路直行，中正路右轉到底即為本館壹號館。</br>
+                <b>行駛國道一號：</b>平鎮交流道下，銜接66東西向快速道路(大溪終點端)下，循員林路一段、介壽路至大溪，過武嶺橋後沿康莊路直行，中正路右轉到底即為本館壹號館。
+                </br></br>
+                假日市區壅塞，建議至大溪後沿介壽路直行瑞安路，將車輛停放於橋頭停車場。下車步行過大溪橋後，搭乘景觀電梯可達本館壹號館，步行約10分鐘。
+                </br></br></br>
+                <b class="color05">李騰芳古宅</b></br>
+                <b>【搭乘大眾運輸】</b></br>
+                <b>桃園火車站：</b>至後站桃園客運總站搭乘【5096】路線，於「觀音寺站」下車，沿月眉路步行約20分鐘。</br>
+                <b>中壢火車站：</b>至後站出口右側站牌搭乘【5098】路線，於「觀音寺站」下車，沿月眉路步行約20分鐘。</br>
+                <b>捷運永寧站：</b></br>
+                至4號出口搭乘【710】路線，於「觀音寺站」下車，沿月眉路步行約20分鐘。或搭乘【9103】路線，於「月眉站」下車，步行約20分鐘。
+                </br></br>
+                <b>【自行開車】</b></br>
+                <b>行駛國道三號：</b>大溪交流道下，循員林路一段、介壽路至大溪，過武嶺橋後於月眉路左轉，沿月眉路前行約500公尺。
+                <b>行駛國道一號：</b>平鎮交流道下，銜接66東西向快速道路(大溪終點端)下，循員林路一段、介壽路至大溪，過武嶺橋後於月眉路左轉，沿月眉路前行約500公尺。
+                </br></br>
+                月眉路全日禁駛15噸以上車輛、假日單向道限制，遊覽車建議由月湖路進入、停放於月眉停車場。
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-color08">
+      <div class="allBoxs">
+        <p class="text-white fs-4 pb-3">指導單位｜桃園市政府 · 桃園市議會</p>
+        <p class="text-white fs-4 pb-3">主辦單位｜桃園市政府文化局 · 桃園市立圖書館 · 桃園市立美術館 · 大滿木藝生態博物館 · 桃園市政府藝能設施管理中心 · 桃園市文化基金會</p>
+        <p class="text-white fs-4">協辦單位｜桃園市政府交通局 · 平鎮區公所 · 桃園市學藝員策進會 · ThERE音樂教室 · 桃園77藝文町 · 南崁兒童藝術村 · 壢景町</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous">
+    </script>
+  </body>
+</html>
