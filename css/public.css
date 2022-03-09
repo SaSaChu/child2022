@@ -81,10 +81,10 @@ a { text-decoration: none; }
 @media screen and (min-width: 0) and (max-width: 989px) { .table { display: block; width: 100%; background-color: white; }
   .table .tr { display: block; }
   .table .tr .td { display: block; text-align: left; padding: 10px 0; color: black; border-right: 1px solid #eca048; border-bottom: 1px solid #eca048; border-left: 1px solid #eca048; }
-  .table .tr .td.td1 { border-right: 1px solid #d7ba36; border-bottom: 1px solid #d7ba36; border-left: 1px solid #d7ba36; }
-  .table .tr .td.td2 { border-right: 1px solid #27a08e; border-bottom: 1px solid #27a08e; border-left: 1px solid #27a08e; }
-  .table .tr .td.td3 { border-right: 1px solid #3e82b8; border-bottom: 1px solid #3e82b8; border-left: 1px solid #3e82b8; }
-  .table .tr .td.td5 { border-right: 1px solid #de816e; border-bottom: 1px solid #de816e; border-left: 1px solid #de816e; }
+  .table .tr .td.td1 { border-right: 1px solid #d7ba36; border-bottom: 1px solid #d7ba36; border-left: 1px solid #d7ba36 !important; }
+  .table .tr .td.td2 { border-right: 1px solid #27a08e; border-bottom: 1px solid #27a08e; border-left: 1px solid #27a08e !important; }
+  .table .tr .td.td3 { border-right: 1px solid #3e82b8; border-bottom: 1px solid #3e82b8; border-left: 1px solid #3e82b8 !important; }
+  .table .tr .td.td5 { border-right: 1px solid #de816e; border-bottom: 1px solid #de816e; border-left: 1px solid #de816e !important; }
   .table .tr .td.tll { border-left: 1px solid #eca048; }
   .table .tr .td.tdd { border-bottom: 2px solid #eca048; }
   .table .tr .td:before { content: attr(title); display: inline-block; width: 120px; font-size: 1.2rem; color: #eca048; font-weight: 600; margin: 0 10px; } }
@@ -121,8 +121,17 @@ a { text-decoration: none; }
 .w30 { width: 30% !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .w30 { width: 100% !important; } }
 
+.w75 { width: 7.5% !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .w75 { width: 100% !important; } }
+
+.w20 { width: 20% !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .w20 { width: 100% !important; } }
+
 .w25 { width: 25% !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .w25 { width: 100% !important; } }
+
+.w10 { width: 10% !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .w10 { width: 100% !important; } }
 
 .w15 { width: 15% !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .w15 { width: 100% !important; } }
